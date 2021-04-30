@@ -2,6 +2,13 @@
     SORT: A Simple, Online and Realtime Tracker
     Copyright (C) 2016-2020 Alex Bewley alex@bewley.ai
 
+        Altered by Jason Sohn for kaboom-labs/nano-hydo:
+        
+        -Class-aware tracking: The original implementation throws away the detected
+        class information (e.g. 0 for 'person', 1 for 'bicycle', etc).
+        I added a 'detclass' attirubte to KalmanBoxTracker object to keep this information.
+
+
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -119,6 +126,8 @@ class KalmanBoxTracker(object):
     self.hits = 0
     self.hit_streak = 0
     self.age = 0
+
+    self.detclass = bbox[5]
 
   def update(self,bbox):
     """
@@ -269,7 +278,7 @@ def parse_args():
     return args
 
 if __name__ == '__main__':
-  # all train
+ain
   args = parse_args()
   display = args.display
   phase = args.phase
