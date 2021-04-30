@@ -278,7 +278,6 @@ def parse_args():
     return args
 
 if __name__ == '__main__':
-ain
   args = parse_args()
   display = args.display
   phase = args.phase
