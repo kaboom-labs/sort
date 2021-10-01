@@ -1,3 +1,9 @@
+# Modifications
+
+1. The category of the object is stored and updated.
+2. Return tracked detections as: `[x1, y1, x2, y2, category, d(x_center)/dt, d(y_center)/dt, d(area)/dt, object_id]`
+
+
 SORT
 =====
 
