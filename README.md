@@ -1,3 +1,5 @@
+**THIS REPO IS EXCLUSIVELY USED FOR YOLOX_tt. IT IS A DEPENDENCY AND SHOULD NOT BE MODIFIED**
+
 # Modifications
 
 1. The category of the object is stored and updated.
